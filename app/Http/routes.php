@@ -20,3 +20,7 @@ Route::post('photos', 'TelegramController@postSendPhoto');
 Route::post('locations', 'TelegramController@postSendLocation');
 
 Route::post(env('TELEGRAM_BOT_TOKEN'), 'TelegramController@postWebhook');
+
+Route::resource('tasks', 'PMTL');
+
+Route::resource('lists', 'PMTLToken');
