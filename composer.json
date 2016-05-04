@@ -23,7 +23,7 @@
             "database"
         ],
         "psr-4": {
-            "MOLiBot\\": "app/"
+            "App\\": "app/"
         }
     },
     "autoload-dev": {

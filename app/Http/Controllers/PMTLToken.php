@@ -1,11 +1,11 @@
 <?php
 
-namespace MOLiBot\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use MOLiBot\Http\Requests;
-use MOLiBot\Http\Controllers\Controller;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
 use Storage;
 
@@ -55,6 +55,7 @@ class PMTLToken extends Controller
 
         return $response;
 */
+        //return response()->json(compact('tasks'), 201)->withCookie(cookie()->forever('listName', $request['listName'], null, null, false, false));
         return response()->json(compact('tasks'), 201)->withCookie(cookie()->forever('listName', $request['listName']));
     }
 

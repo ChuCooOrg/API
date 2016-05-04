@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://bot.moli.rocks',
+    'url' => 'http://localhost',
 
     /*
     |--------------------------------------------------------------------------
@@ -140,11 +140,10 @@ return [
         /*
          * Application Service Providers...
          */
-        MOLiBot\Providers\AppServiceProvider::class,
-        MOLiBot\Providers\AuthServiceProvider::class,
-        MOLiBot\Providers\EventServiceProvider::class,
-        MOLiBot\Providers\RouteServiceProvider::class,
-        Telegram\Bot\Laravel\TelegramServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
         'Barryvdh\Cors\ServiceProvider',
 
     ],
@@ -194,7 +193,6 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-	'Telegram'  => Telegram\Bot\Laravel\Facades\Telegram::class,
 
     ],
 

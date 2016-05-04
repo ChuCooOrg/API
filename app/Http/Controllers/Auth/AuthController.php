@@ -1,10 +1,10 @@
 <?php
 
-namespace MOLiBot\Http\Controllers\Auth;
+namespace App\Http\Controllers\Auth;
 
-use MOLiBot\User;
+use App\User;
 use Validator;
-use MOLiBot\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

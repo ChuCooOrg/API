@@ -1,6 +1,6 @@
 <?php
 
-namespace MOLiBot\Providers;
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
